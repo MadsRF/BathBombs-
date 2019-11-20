@@ -83,15 +83,23 @@ transition:left 2s;
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid black;
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 
 .bigpic{
-
+max-width: 100%;
+height: auto;
 }
 
 .smallpic{
+max-width: 100%;
+height: auto;
+}
 
+.productTitle {
+    font-family: Copperplate;
 }
 
 /* Grid Structure */
