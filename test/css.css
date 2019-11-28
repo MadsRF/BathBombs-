@@ -66,14 +66,14 @@ transition:left 2s;
     height: 80px;
     box-shadow: 0px 1px 3px rgba(255,255,255, 0.5);
     transition-duration:0.5s;
-    overflow: hidden;
+
 }
 
 
 #basket{
     z-index: 9;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-right: 15px;
     right: 0px;
     height: auto;
@@ -93,12 +93,16 @@ transition:left 2s;
 
 }
 
-
-
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
 .subnav {
     float: left;
     overflow: hidden;
 }
+
 
 .subnav .subnav-button{
     font-size: 16px;
@@ -116,7 +120,7 @@ transition:left 2s;
     left: 0;
     background-color: deepskyblue;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
  }
 .subnav-content a{
     float: left;
@@ -132,61 +136,18 @@ transition:left 2s;
     display: block;
 }
 
-
-/*
-ul{
-    display: flex;
-    justify-content: left;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li{
-    float: left;
-}
-li a{
-    display: block;
-    color: white;
+.menu-text{
     font-family: Arial;
-    text-align: center;
-    line-height: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
+    font-size: 20%;
+
+
+}
+.subnav-text{
+    font-size: 40%;
+    font-family: Arial;
+
 }
 
-li a:hover {
-   color: darkgray;
-}
-li.dropdown{
-    display: inline-block;
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a{
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.dropdown-content a:hover{
-    color: grey;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-*/
 .wrapper{
     width: 90%;
     margin: 0 auto;
@@ -199,9 +160,6 @@ li.dropdown{
     grid-gap: 10px;
 }
 
-.item{
-
-}
 
 .productTitle {
     font-family: Copperplate;
