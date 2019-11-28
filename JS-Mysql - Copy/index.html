@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body onload="slider()" onscroll="NavBar()">
+
+
+    <div id="NavBar">
+        <div class="subnav">
+            <button class="subnav-button"> Products <i class="fa fa-caret-down"></i></button>
+
+            <div class="subnav-content">
+                <a href="">Nyheder</a>
+                <a href="">Bestsellers</a>
+                <a href="">Kollektioner</a>
+            </div>
+        </div>
+
+        <a href="">Om os</a>
+        <img src="Pictures/basket.png" id="basket" alt="">
+
+
+    </div>
+
+    <div id="IntroPage">
+        <img src="Pictures/bath1920x1080.jpg" class="IntroPagePicture" style="z-index:3;"/>
+        <img src="Pictures/bath2.jpg" class="IntroPagePicture" style="z-index:2;"/>
+        <img src="Pictures/bath4.jpg" class="IntroPagePicture" style="z-index:1;"/>
+
+        <div id="IntroPageText" style="z-index:5;">
+            <h3 id="CasualLookText">See our full collection here</h3>
+            <div id="IntropageButton">view collection</div>
+
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle" >Overskrift</p>
+            <p class="descriptionText">Description</p>
+            <p class="priceText">Price<span id="Pricetest"></span></p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+        <div class="item">
+            <img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now">
+            <p class="productTitle">Overskrift</p>
+            <p class="text">Description</p>
+            <p class="text">Price</p>
+        </div>
+    </div>
+
+    <footer id="Footer"></footer>
+
+    <!-- Its located here because all elements must be loaded before javascript-->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
