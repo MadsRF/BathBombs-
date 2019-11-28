@@ -32,3 +32,7 @@ function NavBar() {
         document.getElementById("NavBar").style.marginTop = "0px";
     } 
 }
+
+function direct(){
+    window.location.href="URL";
+}

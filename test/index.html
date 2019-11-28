@@ -11,17 +11,21 @@
 
     <div id="NavBar">
         <div class="menu">
-            <div class="subnav">
-                <button class="subnav-button menu-text"> Products </button>
-                <div class="subnav-content">
-                    <a class="subnav-text" href="">Nyheder</a>
-                    <a class="subnav-text" href="">Bestsellers</a>
-                    <a class="subnav-text" href="">Kollektioner</a>
+            <div class="menu-item">
+                <div class="menu-item-button" onclick="direct()">Products</div>
+                <div class="menu-item-content">
+                    <a href="">Nyheder</a>
+                    <a href="">Bestsellers</a>
+                    <a href="">Kollektioner</a>
                 </div>
             </div>
-            <a class="menu-text" href="">Om os</a>
+            <div class="menu-item">
+                <div class="menu-item-button" onclick="direct()">Om os</div>
+            </div>
+
         </div>
-        <img src="Pictures/basket.png" id="basket" alt="">
+        <img id="logo" src="Pictures/Logo.png" alt="">
+        <img id="basket" src="Pictures/basket.png" alt="">
     </div>
 
     <div id="IntroPage">

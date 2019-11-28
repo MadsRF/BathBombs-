@@ -66,9 +66,15 @@ transition:left 2s;
     height: 80px;
     box-shadow: 0px 1px 3px rgba(255,255,255, 0.5);
     transition-duration:0.5s;
-
 }
 
+#logo{
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-height: 50px;
+    margin-left: 30%;
+}
 
 #basket{
     z-index: 9;
@@ -80,72 +86,59 @@ transition:left 2s;
     width: auto;
     max-height: 50%;
     max-width: 50%;
-
 }
 
-#NavBar a{
+.menu a{
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
+    font-family: Arial;
 }
 
 .menu{
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
+    margin-top: 13px;
 }
-.subnav {
+.menu-item {
     float: left;
     overflow: hidden;
 }
 
-
-.subnav .subnav-button{
-    font-size: 16px;
+.menu-item .menu-item-button{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
+
 }
-.subnav-content{
+.menu-item-content{
     display: none;
     position: absolute;
     left: 0;
-    background-color: deepskyblue;
+    background-color: black;
     width: 100%;
     z-index: 10;
- }
-.subnav-content a{
-    float: left;
-    color: white;
-    text-decoration: none;
-
 }
-.subnav-content a:hover {
+
+.menu-item-button:hover{
     color: grey;
-
+    cursor: pointer;
 }
-.subnav:hover .subnav-content{
+
+.menu-item:hover .menu-item-content{
     display: block;
 }
 
-.menu-text{
-    font-family: Arial;
-    font-size: 20%;
-
-
-}
-.subnav-text{
-    font-size: 40%;
-    font-family: Arial;
-
+.menu-item-content a:hover{
+    background-color: dimgrey;
+    opacity: 70%;
 }
 
 .wrapper{
