@@ -36,3 +36,24 @@ function NavBar() {
 function direct(){
     window.location.href="URL";
 }
+function directCheckout(){
+    window.location.href="URL";
+
+}
+
+var basketboolean = true;
+function viewBasket() {
+
+
+    if (basketboolean) {
+        document.getElementById("basket-container").style.visibility = "visible";
+        basketboolean=false;
+    }else if (!basketboolean){
+        document.getElementById("basket-container").style.visibility = "hidden";
+        basketboolean=true;
+
+
+
+
+    }
+}
