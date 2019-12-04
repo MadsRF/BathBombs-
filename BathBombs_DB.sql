@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT exists BathBombs_DB;
 USE BathBombs_DB;
 
-CREATE TABLE Customers(
+CREATE TABLE customers(
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
 firstname varchar(30) NOT NULL,
 lastname varchar(30) NOT NULL,
@@ -13,9 +13,9 @@ email varchar(50) NOT NULL,
 tlf varchar(20)
 );
 
-INSERT INTO Customers VALUES(default, "mads", "hansen", "håndvej", "2450", "KBH", "Denmark","mads@mads.dk", "12345678");
+INSERT INTO customers VALUES(default, "mads", "hansen", "håndvej", "2450", "KBH", "Denmark","mads@mads.dk", "12345678");
 
-CREATE TABLE Users(
+CREATE TABLE users(
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
 firstname varchar(30) NOT NULL,
 lastname varchar(30),
@@ -29,13 +29,13 @@ username varchar(30) NOT NULL UNIQUE,
 password varchar(30) NOT NULL,
 fk_customer_id int NOT NULL, 
 
-FOREIGN KEY(fk_customer_id)references Customers(id)
+FOREIGN KEY(fk_customer_id)references customers(id)
 );
 
-INSERT INTO Users VALUES(default, "kasper", "kaspersen", "håndvej", "2500", "KBH SV", "Denmark","KASPER@mads.dk", "99999999", "Teletubi", "1234", "1");
+INSERT INTO users VALUES(default, "kasper", "kaspersen", "håndvej", "2500", "KBH SV", "Denmark","KASPER@mads.dk", "99999999", "Teletubi", "1234", "1");
 
 
-CREATE TABLE Products(
+CREATE TABLE products(
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
 name varchar(50) NOT NULL,
 price decimal(10,2) NOT NULL,  
@@ -43,15 +43,23 @@ description varchar(250) NOT NULL,
 category varchar(50) NOT NULL
 ); 
 
-INSERT INTO Products VALUES(DEFAULT, "BATHBOMS", "1000", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "1000", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "800", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "600", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "400", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "200", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "250", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "350", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "450", "this is a bathbomb!", "bathbomb");
+INSERT INTO products VALUES(DEFAULT, "BATHBOMS", "666", "this is a bathbomb!", "bathbomb");
 
-CREATE TABLE Owner(
+CREATE TABLE owner(
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
 username varchar(30) NOT NULL UNIQUE,
 password varchar(30) NOT NULL
 );
 
-INSERT INTO Owner VALUES(DEFAULT, "GERT", "12345");
+INSERT INTO owner VALUES(DEFAULT, "GERT", "12345");
 
 
 

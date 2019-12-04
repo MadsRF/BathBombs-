@@ -1,15 +1,16 @@
-/*$.get("http://localhost:9000/api", function(data){
-
-var html = data[0].country
-$('#Texttest').append(html);
-
-}); */
-
-
+// Gets all information about products from the API-products and display them on frontpage
 $.get("http://localhost:9000/api-products", function(data){
+    console.log('hej');
+    var html = '';
 
-var priceamount = data[0].price;
-$('#Pricetest').append(' ' + priceamount);
+    for(i = 0; i < data.length; i++){
+        html += '<div class="item"> ' +
+            '<img class="pic" src="Pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now"> ' +
+            '<p class="productTitle" >' + data[i].name + '</p>' +
+            '<p class="descriptionText">' + data[i].description + '</p>' +
+            '<p class="priceText">' + data[i].price + ' kr' + '</p></div>'
+    }
+    $('.frontPageProductWrapper').append(html);
 
 });
 

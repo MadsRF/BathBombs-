@@ -141,7 +141,7 @@ transition:left 2s;
     opacity: 70%;
 }
 
-.wrapper{
+.frontPageProductWrapper{
     width: 90%;
     margin: 0 auto;
     margin-top: 3%;
@@ -161,7 +161,7 @@ transition:left 2s;
     margin-left: 7%;
 }
 
-.text{
+.descriptionText .priceText{
     margin-top: 1%;
     margin-left: 7%;
     margin-bottom: 4%;

@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql');
-var bodyParser = require('body-Parser')
+var bodyParser = require('body-parser')
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // sends data to html side 
@@ -16,7 +16,7 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "1234",
-    database: "bathbombs_db"
+    database: "BathBombs_DB"
 });
 
 con.connect();
