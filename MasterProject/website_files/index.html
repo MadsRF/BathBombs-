@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body onload="slider()" onscroll="NavBar()">
+
+
+    <div id="NavBar">
+        <div class="menu">
+            <div class="menu-item">
+                <div class="menu-item-button" onclick="direct()">Products</div>
+                <div class="menu-item-content">
+                    <a href="">Nyheder</a>
+                    <a href="">Bestsellers</a>
+                    <a href="">Kollektioner</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-button" onclick="direct()">Om os</div>
+            </div>
+
+        </div>
+        <img id="logo" src="pictures/Logo.png" alt="">
+        <img id="basket" src="pictures/basket.png" alt="" onclick="viewBasket()">
+
+    </div>
+
+    <div id="basket-container">
+
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+
+        <div id="checkout-button" onclick="directCheckout()">GÅ TIL KASSEN</div>
+
+    </div>
+
+    <div id="IntroPage">
+        <img src="pictures/bath1920x1080.jpg" class="IntroPagePicture" style="z-index:3;"/>
+        <img src="pictures/bath2.jpg" class="IntroPagePicture" style="z-index:2;"/>
+        <img src="pictures/bath4.jpg" class="IntroPagePicture" style="z-index:1;"/>
+
+        <div id="IntroPageText" style="z-index:5;">
+            <h3 id="CasualLookText">See our full collection here</h3>
+            <div id="IntropageButton">view collection</div>
+
+        </div>
+    </div>
+
+    <div class="frontPageProductWrapper">
+
+    </div>
+
+
+
+    <footer id="Footer"></footer>
+
+    <!-- Its located here because all elements must be loaded before javascript-->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
