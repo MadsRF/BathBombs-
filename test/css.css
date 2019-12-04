@@ -86,6 +86,43 @@ transition:left 2s;
     width: auto;
     max-height: 50%;
     max-width: 50%;
+    cursor: pointer;
+}
+
+#basket:hover{
+    cursor: pointer;
+
+}
+#basket-container{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 200px;
+    max-height: 500px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 50;
+    visibility: hidden;
+    box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.7);
+}
+#checkout-button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(210, 210, 210);
+    font-family: Arial;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 70%;
+    align-content: center;
+    text-align: center;
+}
+#checkout-button:hover{
+    background-color: rgb(150, 150, 150);
+    color: rgb(240,240,240);
 }
 
 .menu a{
@@ -125,6 +162,8 @@ transition:left 2s;
     background-color: black;
     width: 100%;
     z-index: 10;
+    box-shadow: 0px 1px 3px rgba(255,255,255, 0.5);
+
 }
 
 .menu-item-button:hover{
