@@ -5,19 +5,18 @@
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <meta charset="utf-8" />
 
+    <!-- this is what we use to get our Jquery to work from os js file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- This is what we use to get our carusel to work from bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-
 
     <title></title>
 </head>
 
+<!-- this is for the top navigation on the front page and logos -->
 <body onload="slider()" onscroll="NavBar()">
-
 
     <div id="NavBar">
         <div class="menu">
@@ -36,11 +35,10 @@
         </div>
         <img id="logo" src="pictures/Logo.png" alt="">
         <img id="basket" src="pictures/basket.png" alt="" onclick="viewBasket()">
-
     </div>
 
+    <!-- this is for our shopping basket -->
     <div id="basket-container">
-
         <p>TEST</p>
         <p>TEST</p>
         <p>TEST</p>
@@ -51,68 +49,45 @@
         <p>TEST</p>
         <p>TEST</p>
         <p>TEST</p>
-
         <div id="checkout-button" onclick="directCheckout()">GÅ TIL KASSEN</div>
-
     </div>
 
-
-
-    <div class="container">
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+        <!-- this is our sliding pictures in the front page -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="pictures/bath1920x1080.jpg">
                 </div>
-<!--
+
                 <div class="item">
-                    <img src="pictures/bath2.jpg">
+                    <img src="pictures/bath2_redigeret.jpg">
                 </div>
 
                 <div class="item">
-                    <img src="pictures/bath4.jpg">
+                    <img src="pictures/bath4_redigeret.jpg">
                 </div>
--->
+
             </div>
         </div>
-    </div>
 
-
-
-<!--
-    <div id="IntroPage">
-        <img src="pictures/bath1920x1080.jpg" class="IntroPagePicture" style="z-index:3;"/>
-        <img src="pictures/bath2.jpg" class="IntroPagePicture" style="z-index:2;"/>
-        <img src="pictures/bath4.jpg" class="IntroPagePicture" style="z-index:1;"/>
-
-        <div id="IntroPageText" style="z-index:5;">
-            <h3 id="CasualLookText">See our full collection here</h3>
-            <div id="IntropageButton">view collection</div>
-
-        </div>
-    </div>
--->
-<!--
-    <div class="frontPageProductWrapper">
+    <!-- this is the welcome text on top on the sliding pictures on the frontpage  -->
+    <div id="IntroPageText" style="z-index:5;">
+        <h3 id="CasualLookText">See our full collection here</h3>
+        <div id="IntropageButton">view collection</div>
 
     </div>
 
+    <!-- this is what displays the products on the front page -->
+    <div class="frontPageProductWrapper"></div>
 
+    <!-- this is for the bottom footer -->
     <footer id="Footer"></footer>
--->
+
     <!-- Its located here because all elements must be loaded before javascript-->
-
     <script src="js/scripts.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
