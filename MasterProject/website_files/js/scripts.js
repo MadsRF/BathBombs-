@@ -3,7 +3,6 @@ var y = 0;
 
 
 function slider() {
-
     window.setInterval(Intropager, 11000);
 }
 
@@ -43,7 +42,6 @@ function Intropager() {
     
 
 function NavBar() {
-
     if (document.documentElement.scrollTop > 25) {
         document.getElementById("NavBar").style.marginTop = "0px";
     } 
@@ -59,17 +57,14 @@ function directCheckout(){
 
 var basketboolean = true;
 function viewBasket() {
-
-
     if (basketboolean) {
         document.getElementById("basket-container").style.visibility = "visible";
         basketboolean=false;
     }else if (!basketboolean){
         document.getElementById("basket-container").style.visibility = "hidden";
         basketboolean=true;
-
-
-
-
     }
 }
+
+
+
