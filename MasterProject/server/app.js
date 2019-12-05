@@ -4,6 +4,8 @@ var app = express();
 var mysql = require('mysql');
 var bodyParser = require('body-parser')
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
+// modul to get the owner webpage
+var path = require('path');
 
 // sends data to html side 
 app.use(bodyParser.json());
@@ -44,6 +46,12 @@ app.get('/api-products', function(request, response){
         }
 
     });
+});
+
+app.get('/owner', function (req, res) {
+    console.log('GET on /owner');
+    res.sendFile(path.resolve(__dirname + '/../website_files/owner.html'));
+    //res.sendFile(__dirname + '/../website_files/owner.html');
 });
 
 
