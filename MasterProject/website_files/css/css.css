@@ -73,7 +73,7 @@ transition:left 2s;
     width: auto;
     height: auto;
     max-height: 50px;
-    margin-left: 30%;
+    margin-left: 32%;
 }
 
 #basket{
@@ -197,7 +197,7 @@ transition:left 2s;
     font-family: Copperplate;
     font-size: 180%;
     margin: 0;
-    margin-left: 7%;
+    margin-left: 0%;
 }
 
 .descriptionText .priceText{
