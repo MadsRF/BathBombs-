@@ -54,7 +54,7 @@ function directCheckout(){
     window.location.href="URL";
 
 }
-
+//show and remove basket when basket picture is pressed
 var basketboolean = true;
 function viewBasket() {
     if (basketboolean) {
@@ -66,12 +66,12 @@ function viewBasket() {
     }
 
 }
-
+//overwrites speed on sliding pictures
 $(document).ready(function () {
     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 5000
 
 })
-
+//show and remove contactbox when button is pressed
 var contactboolean = true;
 function kontaktFomularKnapFunction() {
     if (contactboolean) {
@@ -82,6 +82,14 @@ function kontaktFomularKnapFunction() {
         contactboolean=true;
     }
 }
+//removes ccontact box if clicked outside of box
+window.addEventListener('mouseup', function (event) {
+    var box = document.getElementById('kontaktFormular');
+    if (event.target != box && event.target.parentNode != box){
+        box.style.display = "none";
+        contactboolean=true;
+    }
+});
 
 
 
