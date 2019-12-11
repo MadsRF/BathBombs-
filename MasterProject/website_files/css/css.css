@@ -232,8 +232,9 @@ bottom:0;
 }
 
 .carousel-inner>.item{
-    -webkit-transition: -webkit-transform 0.6s ease-in-out !important;
-    -o-transition: -o-transform 0.6s ease-in-out !important;
-    transition: transform 0.6s ease-in-out !important;
+    -webkit-transition: -webkit-transform 5s ease-in-out !important;
+    -o-transition: -o-transform 5s ease-in-out !important;
+    transition: transform 5s ease-in-out !important;
 }
+
 
