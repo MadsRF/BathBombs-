@@ -1,6 +1,7 @@
 ﻿html, body {
     height:100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .IntroPagePicture {
@@ -43,6 +44,7 @@ transition:left 2s;
     border-radius: 5px;
     text-align: center;
     line-height: 3;
+
 }
 
     #IntropageButton:hover {
@@ -125,10 +127,13 @@ transition:left 2s;
     width: 70%;
     align-content: center;
     text-align: center;
+    border: white solid 2px;
 }
 #checkout-button:hover{
-    background-color: grey;
-    color: white;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    border: white solid 2px;
 }
 
 .menu a{

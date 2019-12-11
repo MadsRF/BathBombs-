@@ -68,7 +68,7 @@ function viewBasket() {
 }
 
 $(document).ready(function () {
-    jQuery.fn.carousel.Constructor.TRANSITION_DURATION =5000
+    jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 5000
 
 })
 
