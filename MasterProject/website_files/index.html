@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <meta charset="utf-8" />
@@ -82,8 +82,73 @@
     <!-- this is what displays the products on the front page -->
     <div class="frontPageProductWrapper"></div>
 
+    <div id="kontaktFormular">
+        <form>
+
+            <label>Navn</label>
+            <input type="text" placeholder="Dit navn..">
+
+            <label>Emne</label>
+            <input type="text" placeholder="Dit emne..">
+
+            <label>Email</label>
+            <input type="text" placeholder="Din Email..">
+
+            <label>Tekst felt</label>
+            <textarea placeholder="Beskriv dit spørgsmålet.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+
     <!-- this is for the bottom footer -->
-    <footer id="Footer"></footer>
+    <footer id="Footer">
+        <div id="footerKontakt">
+            <h4 class="footerHeadline">Kontakt information</h4>
+            <p>Adressevej 47</p>
+            <p>2600 glostrup</p>
+            <p>Telefontider: 08-16</p>
+            <a href="tel:+45 12345678">+45 12345678</a><br>
+            <a href="mailto: bathbomb@mail.dk" target="_blank">bathbomb@mail.dk</a>
+        </div>
+
+        <div id="footerFAQ">
+            <h4 class="footerHeadline">FAQ</h4>
+            <p>Er det organisk? Ja alle vores produkter er uden kemikalier!</p>
+            <p>Er det godt for dig? Ja det er super sundt for huden!</p>
+            <p>Er det fairtrade? ja vi betaler vores udlandsleverandørere en fornuftig pris!</p>
+        </div>
+
+        <div id="footerNyttig">
+            <h4 class="footerHeadline">Nyttig information</h4>
+                <p>14 dages fuld returret</p>
+                <p>B2B og B2C</p>
+                <p>Fri forsendelse ved køb over 500kr</p>
+        </div>
+
+        <div id="kontaktFomularKnap" onclick="kontaktFomularKnapFunction()">Kontakt os</div>
+
+        <!-- As an user
+        I want to be able to see a footer, with information about exobombs
+        So that i easily can see exobombs contact- and other relevant information
+
+        contact button/formular:
+        (pop up window with email, name, subject and question with send button)
+
+        contact info, phone time, disclaimer, copyright, FAQ -->
+
+    </footer>
+
+
+
+
+
+
+
+
+
 
     <!-- Its located here because all elements must be loaded before javascript-->
     <script src="js/scripts.js"></script>

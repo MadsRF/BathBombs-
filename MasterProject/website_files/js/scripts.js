@@ -66,5 +66,20 @@ function viewBasket() {
     }
 }
 
+var contactboolean = true;
+function kontaktFomularKnapFunction() {
+    if (contactboolean) {
+        document.getElementById("kontaktFormular").style.display = "inherit";
+        contactboolean=false;
+    }else if (!contactboolean){
+        document.getElementById("kontaktFormular").style.display = "none";
+        contactboolean=true;
+    }
+}
+
+
+
+
+
 
 
