@@ -64,7 +64,13 @@ function viewBasket() {
         document.getElementById("basket-container").style.visibility = "hidden";
         basketboolean=true;
     }
+
 }
+
+$(document).ready(function () {
+    jQuery.fn.carousel.Constructor.TRANSITION_DURATION =5000
+
+})
 
 var contactboolean = true;
 function kontaktFomularKnapFunction() {
