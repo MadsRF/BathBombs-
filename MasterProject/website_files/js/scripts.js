@@ -1,45 +1,51 @@
-var x = document.getElementsByClassName("IntroPagePicture");
-var y = 0;
-
-
-function slider() {
-    window.setInterval(Intropager, 11000);
-}
+var productData;
 
 // Gets all information about products from the API-products and display them on frontpage
 $.get("http://localhost:9000/api-products", function(data){
     console.log('hej');
     var html = '';
+    productData = data;
 
     for(i = 0; i < data.length; i++){
-        html += '<div class="item"> ' +
+        html += '<div class="item" + id=" '+ i +' "> ' +
             '<img class="pic" src="../pictures/bath7.jpg" title="Bathbomb for now" alt="Bathbomb for now"> ' +
             '<p class="productTitle" >' + data[i].name + '</p>' +
             '<p class="descriptionText">' + data[i].description + '</p>' +
-            '<p class="priceText">' + data[i].price + ' kr' + '</p></div>'
+            '<p class="priceText">' + data[i].price + ' kr' + '</p>' +
+            '<div class="AddToCart" +  onclick="addToBasket(this)" +>Press me to add to cart</div></div>'
     }
     $('.frontPageProductWrapper').append(html);
 
 });
 
-function Intropager() {
-    
-        console.log(y)
 
-    x[y].style.transform = "translateX(-2000px)";
+function addToBasket(elem){
 
-    y++
+var itemID;
 
-        if (y > (x.length)-1) {
-            y = 0;
-            for (i = 0; i <= x.length - 1; i++) {
-                x[i].style.transform = "translateX(0px)";
-                
-            }
-        };
+    //Press F for
+    /*$('.AddToCart').on('click', function () {
+    var parent_id = $(this).parent().attr('id');
+    itemID = parent_id;
+    console.log(parent_id);
+    }); */
 
-    }
-    
+    console.log(elem.parentNode.id);
+
+    x = Number(elem.parentNode.id);
+
+
+
+    document.cookie = "name=" + productData[x].name;
+
+    $('#cartitem-container').empty().append(
+
+        '<p>' + document.cookie + '</p>'
+
+    );
+
+}
+
 
 function NavBar() {
     if (document.documentElement.scrollTop > 25) {
@@ -64,7 +70,6 @@ function viewBasket() {
         document.getElementById("basket-container").style.visibility = "hidden";
         basketboolean=true;
     }
-
 }
 //overwrites speed on sliding pictures
 $(document).ready(function () {
