@@ -61,6 +61,16 @@ app.get('/login', function (req, res) {
 
 });
 
+app.get('/api-owner', function(req, res){
+    console.log('GET on /api-owner');
+    con.query("SELECT * FROM owner", function (err, rows){
+        if(err)
+            throw err;
+        console.log(rows);
+        res.json(rows);
+    })
+});
+
 
 /*
 app.get('/api', function(req, res){
