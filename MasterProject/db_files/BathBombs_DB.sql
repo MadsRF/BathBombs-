@@ -60,4 +60,4 @@ username varchar(30) NOT NULL UNIQUE,
 password varchar(30) NOT NULL
 );
 
-INSERT INTO owner VALUES(DEFAULT, "GERT", "12345");
+INSERT INTO owner VALUES(DEFAULT, "admin", "pass");

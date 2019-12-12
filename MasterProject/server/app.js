@@ -54,6 +54,13 @@ app.get('/owner', function (req, res) {
     //res.sendFile(__dirname + '/../website_files/owner.html');
 });
 
+app.get('/login', function (req, res) {
+    console.log('GET on /login');
+    res.sendFile(path.resolve(__dirname + '/../website_files/login_owner.html'))
+
+
+});
+
 
 /*
 app.get('/api', function(req, res){
