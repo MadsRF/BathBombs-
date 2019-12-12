@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin login</title>
+    <!-- this is what we use to get our Jquery to work from os js file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+
 </head>
 <body>
-    <form action="" method="post">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input type="submit">
-    </form>
+    <input type="text" name="username" id="username">
+    <input type="password" name="password" id="password">
+    <input type="submit" onclick="login_credentials()">
+
+    <!-- Its located here because all elements must be loaded before javascript-->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
