@@ -18,6 +18,29 @@ $.get("http://localhost:9000/api-products", function(data){
 
 });
 
+// Gets login credentials from the owner api and compares them with the users input
+function login_credentials(){
+    $.get("http://localhost:9000/api-owner", function(data){
+        console.log('JQuery fetch api-owner');
+        var apiusername = data[0].username;
+        var apipassword = data[0].password;
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if(apiusername === username && apipassword === password){
+            window.location.href="http://localhost:9000/owner";
+        }else{
+            alert("Brugernavn eller password er forkert. Prøv igen!")
+        }
+    });
+
+
+
+}
+
+
+
 
 function addToBasket(elem){
 
