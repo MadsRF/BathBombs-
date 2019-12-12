@@ -5,14 +5,26 @@
     <title>Admin login</title>
     <!-- this is what we use to get our Jquery to work from os js file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/css_login.css">
 
 </head>
 <body>
-    <input type="text" name="username" id="username">
-    <input type="password" name="password" id="password">
-    <input type="submit" onclick="login_credentials()">
 
+<div class="login_container">
+
+    <div class="img_container">
+        <img id="logo" src="pictures/Logo.png" alt="">
+    </div>
+
+    <div class="input_container">
+        <p>Brugernavn </p>
+        <input type="text" placeholder="Indtast brugernavn" id="username" required>
+        <p>Adgangskode</p>
+        <input type="password" placeholder="Indtast adgangskode" name="password" id="password" required>
+        <button type="submit" onclick="login_credentials()">Log ind</button>
+    </div>
+
+</div>
     <!-- Its located here because all elements must be loaded before javascript-->
     <script src="js/scripts.js"></script>
 </body>
