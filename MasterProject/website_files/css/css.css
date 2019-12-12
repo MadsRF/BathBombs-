@@ -245,8 +245,9 @@ transition:left 2s;
 }
 
 #footerKontakt {
-    margin: 5%;
+    margin: 3%;
     margin-top: 2%;
+    max-width: 250px;
     width: auto;
     float: left;
     color: rgb(160,160,160);
@@ -261,7 +262,8 @@ transition:left 2s;
 }
 
 #footerFAQ{
-    margin: 5%;
+    margin: 3%;
+    max-width: 250px;
     margin-top: 2%;
     width: auto;
     float: left;
@@ -269,9 +271,10 @@ transition:left 2s;
 }
 
 #footerNyttig{
-    margin: 5%;
+    margin: 3%;
     margin-top: 2%;
     width: auto;
+    max-width: 250px;
     float: left;
     color: rgb(160,160,160);
 }
